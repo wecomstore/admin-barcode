@@ -1,0 +1,30 @@
+{
+    "name": "wecomstore/admin-barcode",
+    "description": "The admin Barcode Package",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "aler.gl",
+            "email": "974291@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0.0",
+        "ext-gd": "*",
+        "topthink/framework": "^8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeItNow\\": "CodeItNow/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "CodeItNow\\BarCodeService"
+            ]
+        }
+    }
+}
